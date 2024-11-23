@@ -8,7 +8,7 @@ type Service = {
 };
 
 export default async function Footer() {
-  const response = await fetch('http://localhost:3000/api/services');
+  const response = await fetch('https://hyperhire-azure.vercel.app/api/services');
   const services = await response.json();
 
   const details = [

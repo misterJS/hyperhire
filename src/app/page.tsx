@@ -8,7 +8,7 @@ interface People {
 }
 
 export default async function HomePage() {
-  const res = await fetch('http://127.0.0.1:3000/api/peoples', {
+  const res = await fetch('https://hyperhire-azure.vercel.app/api/peoples', {
     cache: 'no-store',
   });
 
