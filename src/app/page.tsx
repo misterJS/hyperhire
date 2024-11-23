@@ -8,8 +8,15 @@ interface People {
 }
 
 export default async function HomePage() {
-  const response = await fetch('http://127.0.0.1:3000/api/peoples');
-  const peoples = await response.json();
+  const res = await fetch('http://127.0.0.1:3000/api/peoples', {
+    cache: 'no-store',
+  });
+
+  if (!res.ok) {
+    throw new Error('Failed to fetch data');
+  }
+
+  const peoples = await res.json();
 
   return (
     <Layout>
