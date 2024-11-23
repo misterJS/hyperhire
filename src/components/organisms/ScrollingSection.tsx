@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const items = [
@@ -32,7 +33,7 @@ export default function ScrollingSection() {
             <div key={item.id} className="flex-shrink-0 w-[20%] flex justify-center px-4">
               <div className="bg-white bg-opacity-20 rounded-lg shadow-md p-4 w-full flex items-center space-x-4">
                 <div className="bg-white bg-opacity-40 w-12 h-12 flex items-center justify-center rounded-md">
-                  <img src={item.icon} alt={item.title} className="w-6 h-6" />
+                  <Image src={item.icon} alt={item.title} width={24} height={24} />
                 </div>
                 <span className="text-white font-bold">{item.title}</span>
               </div>

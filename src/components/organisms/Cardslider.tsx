@@ -23,7 +23,9 @@ export default function CardSlider() {
 
   return (
     <div className="relative flex flex-col md:flex-row justify-center items-center h-auto mt-20 md:h-[400px] py-10 w-full">
-      <Button onClick={prevSlide} className="absolute bg-transparent left-0 md:left-10 text-white text-2xl font-bold z-10">
+      <Button
+        onClick={prevSlide}
+        className="absolute bg-transparent left-0 md:left-10 text-white text-2xl font-bold z-10">
         {'<'}
       </Button>
       <div className="relative flex justify-center items-center w-full md:w-[697px]">
@@ -32,8 +34,8 @@ export default function CardSlider() {
             index === currentIndex
               ? 'z-20 scale-100'
               : index === (currentIndex + 1) % cards.length
-              ? 'z-10 scale-90 translate-x-10 md:translate-x-20 opacity-50'
-              : 'z-0 scale-90 -translate-x-10 md:-translate-x-20 opacity-50';
+                ? 'z-10 scale-90 translate-x-10 md:translate-x-20 opacity-50'
+                : 'z-0 scale-90 -translate-x-10 md:-translate-x-20 opacity-50';
 
           return (
             <div key={card.id} className={`absolute transform transition-all duration-500 ${position}`}>
@@ -48,7 +50,9 @@ export default function CardSlider() {
           );
         })}
       </div>
-      <Button onClick={nextSlide} className="absolute bg-transparent right-0 md:right-10 text-white text-2xl font-bold z-10">
+      <Button
+        onClick={nextSlide}
+        className="absolute bg-transparent right-0 md:right-10 text-white text-2xl font-bold z-10">
         {'>'}
       </Button>
     </div>
