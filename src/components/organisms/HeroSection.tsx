@@ -26,19 +26,23 @@ export default function HeroSection() {
             <div>
               <div className="border-t border-white mb-4 w-24 animate-fadeInUp"></div>
               <h3 className="text-lg font-bold mb-2 animate-fadeInUp delay-100">평균 월 120만원</h3>
-              <p className="text-sm w-40 animate-fadeInUp delay-200">임금을 해당 국가별 기준으로 계산합니다.</p>
+              <Typography className="text-sm w-40 animate-fadeInUp delay-200">
+                임금을 해당 국가별 기준으로 계산합니다.
+              </Typography>
             </div>
             <div>
               <div className="border-t border-white mb-4 w-24 animate-fadeInUp delay-300"></div>
               <h3 className="text-lg font-bold mb-2 animate-fadeInUp delay-400">최대 3회 인력교체</h3>
-              <p className="text-sm w-40 animate-fadeInUp delay-500">만약 처음에 팀에 맞지 않아도 걱정하지 마세요.</p>
+              <Typography className="text-sm w-40 animate-fadeInUp delay-500">
+                만약 처음에 팀에 맞지 않아도 걱정하지 마세요.
+              </Typography>
             </div>
             <div>
               <div className="border-t border-white mb-4 w-24 animate-fadeInUp delay-600"></div>
               <h3 className="text-lg font-bold mb-2 animate-fadeInUp delay-700">평균 3일, 최대 10일</h3>
-              <p className="text-sm w-40 animate-fadeInUp delay-800">
+              <Typography className="text-sm w-40 animate-fadeInUp delay-800">
                 급하게 사람이 필요한 경우에도 빠른 채용이 가능합니다.
-              </p>
+              </Typography>
             </div>
           </div>
         </div>
